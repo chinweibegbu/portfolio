@@ -1,0 +1,8 @@
+.TitleBar .nav-link {
+    color: white;
+    margin: auto;
+}
+
+.TitleBar .nav-link:hover {
+    text-decoration: underline;
+}
