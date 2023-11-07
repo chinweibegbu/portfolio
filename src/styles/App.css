@@ -1,3 +1,9 @@
-.App {
-  text-align: center;
+.heading {
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.bordered {
+  border: solid 1px black;
+  min-height: 20px;
 }
