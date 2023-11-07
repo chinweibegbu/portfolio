@@ -12,7 +12,7 @@ function DesignPage() {
     return (
         <div className="DesignPage container py-3">
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 my-2">
                     <h2>{projectName}</h2>
                 </div>
                 <div className="col-12 d-flex justify-content-between align-content-end">
