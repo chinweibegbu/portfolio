@@ -14,11 +14,11 @@ function App() {
     <div className="App d-flex flex-column min-vh-100">
       <TitleBar />
       <Routes>
-        <Route exact path="/" component={Landing} />
-        <Route path="/designer" component={Designer} />
-        <Route path="/developer" component={Developer} />
-        <Route path="/volunteer" component={Volunteer} />
-        <Route component={PageNotFound} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/designer" element={<Designer />} />
+        <Route path="/developer" element={<Developer />} />
+        <Route path="/volunteer" element={<Volunteer />} />
+        <Route element={<PageNotFound />} />
       </Routes>
       <Footer />
     </div>
