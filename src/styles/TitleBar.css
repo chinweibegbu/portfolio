@@ -1,3 +1,11 @@
+.TitleBar {
+    background-color: #134f13;
+}
+
+.TitleBar a {
+    text-decoration: none;
+}
+
 .TitleBar .nav-link {
     color: white;
     margin: auto;
