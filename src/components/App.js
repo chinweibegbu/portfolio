@@ -5,6 +5,7 @@ import TitleBar from './common/TitleBar.js';
 import Footer from './common/Footer.js';
 import Landing from './pages/Landing.js';
 import Designer from './pages/Designer.js';
+import DesignPage from './pages/DesignPage.js';
 import Developer from './pages/Developer.js';
 import Volunteer from './pages/Volunteer.js';
 import PageNotFound from './common/PageNotFound.js';
@@ -16,9 +17,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/designer" element={<Designer />} />
+        <Route path="/designer/:projectName" element={<DesignPage />} />
         <Route path="/developer" element={<Developer />} />
         <Route path="/volunteer" element={<Volunteer />} />
-        <Route element={<PageNotFound />} />
+        <Route path="/:unknown" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </div>
