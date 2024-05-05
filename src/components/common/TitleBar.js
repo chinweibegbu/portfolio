@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import '../../styles/TitleBar.css';
+import Logo from "./Logo";
 
 function TitleBar() {
     return (
-        <nav className="TitleBar navbar navbar-expand-lg navbar-dark py-3">
+        <nav className="TitleBar navbar navbar-expand-lg navbar-dark py-2">
             <div className="container">
                 <NavLink to="/">
-                    <p className="navbar-brand my-auto" href="index.html"><span className="fw-bolder">My Portfolio</span></p>
+                    <p className="navbar-brand my-auto" href="index.html"><Logo /></p>
                 </NavLink>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
