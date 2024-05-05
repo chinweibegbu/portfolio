@@ -1,0 +1,6 @@
+.Logo {
+    border: solid 5px var(--cream);
+    border-radius: 10px;
+    font-weight: 900;
+    color: var(--cream);
+}
