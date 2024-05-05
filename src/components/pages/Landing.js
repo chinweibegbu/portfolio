@@ -1,9 +1,10 @@
 import React from "react";
+import Logo from "../common/Logo";
 import "../../styles/Landing.css";
 
 function Landing() {
     return (
-        <div className="Landing container">
+        <div className="Landing container h-100">
             <div className="row h-100 my-auto">
                 <div className="col-6 d-flex flex-column my-auto">
                     <div className="col-12">
@@ -11,7 +12,7 @@ function Landing() {
                         <p className="biggest-text m-0">CHINWE IBEGBU</p>
                     </div>
                     <div className="subtitle col-12 mt-2">
-                        <p>I am a learner finding my path in technology and life at large with curiosity and flexibility.</p>
+                        <p>A learner finding my path in technology and life at large with curiosity and flexibility</p>
                     </div>
                     <div className="col-12 mt-1 d-flex">
                         <div className="portfolio-section">
