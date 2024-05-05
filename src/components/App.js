@@ -14,14 +14,16 @@ function App() {
   return (
     <div className="App d-flex flex-column min-vh-100">
       <TitleBar />
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/designer" element={<Designer />} />
-        <Route path="/designer/:projectName" element={<DesignPage />} />
-        <Route path="/developer" element={<Developer />} />
-        <Route path="/volunteer" element={<Volunteer />} />
-        <Route path="/:unknown" element={<PageNotFound />} />
-      </Routes>
+      <div className='Main'>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/designer" element={<Designer />} />
+          <Route path="/designer/:projectName" element={<DesignPage />} />
+          <Route path="/developer" element={<Developer />} />
+          <Route path="/volunteer" element={<Volunteer />} />
+          <Route path="/:unknown" element={<PageNotFound />} />
+        </Routes>
+      </div>
       <Footer />
     </div>
   );
