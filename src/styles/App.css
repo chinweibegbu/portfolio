@@ -30,6 +30,12 @@
   background-color: var(--dark-green);
 }
 
+.Container {
+  height: 100%;
+  width: 100%;
+  padding: 2rem 4rem; 
+}
+
 .heading {
   font-size: xx-large;
   font-weight: 700;

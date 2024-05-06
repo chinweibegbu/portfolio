@@ -1,9 +1,11 @@
 import React from "react";
-import UnderConstruction from "../common/UnderConstruction.js";
+import PageHeader from "../common/PageHeader.js";
 
 function Developer() {
     return (
-        <UnderConstruction />
+        <div className="Developer container Container">
+            <PageHeader title="Developer" />
+        </div>
     );
 }
 
