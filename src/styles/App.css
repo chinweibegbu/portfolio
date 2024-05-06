@@ -1,5 +1,6 @@
 :root {
   --cream: #F0E9DB;
+  --dark-cream: #E0D7C6;
   --dark-green: #214F0F;
   --black: #000000;
   --white: #FFFFFF;
@@ -12,6 +13,21 @@
 .App .Main {
   height: 85vh;
   background-color: var(--cream);
+  overflow-y: scroll;
+}
+
+.App .Main::-webkit-scrollbar {
+  width: 10px;
+}
+
+.App .Main::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: var(--dark-cream);
+}
+
+.App .Main::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--dark-green);
 }
 
 .heading {
