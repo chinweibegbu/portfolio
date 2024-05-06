@@ -5,7 +5,7 @@ import Logo from "./Logo";
 
 function TitleBar() {
     return (
-        <nav className="TitleBar navbar navbar-expand-lg navbar-dark py-2">
+        <nav className="TitleBar navbar navbar-expand-lg py-2">
             <div className="container">
                 <NavLink to="/">
                     <p className="navbar-brand my-auto" href="index.html"><Logo /></p>
@@ -14,13 +14,19 @@ function TitleBar() {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav ms-auto small">
                         <NavLink to="/designer">
-                            <li className="nav-item"><p className="nav-link">Designer</p></li>
+                            <li className="nav-item">
+                                <p className="nav-link">Designer</p>
+                            </li>
                         </NavLink>
                         <NavLink to="/developer">
-                            <li className="nav-item"><p className="nav-link">Developer</p></li>
+                            <li className="nav-item">
+                                <p className="nav-link">Developer</p>
+                            </li>
                         </NavLink>
                         <NavLink to="/volunteer">
-                            <li className="nav-item"><p className="nav-link">Volunteer</p></li>
+                            <li className="nav-item">
+                                <p className="nav-link">Volunteer</p>
+                            </li>
                         </NavLink>
                     </ul>
                 </div>

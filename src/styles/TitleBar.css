@@ -7,6 +7,15 @@
     text-decoration: none;
 }
 
+.TitleBar a.active {
+    background-color: var(--cream);
+    border-radius: 10px;
+    
+    p {
+        color: var(--black);
+    }
+}
+
 .TitleBar .nav-link {
     color: var(--cream);
     margin: auto;
