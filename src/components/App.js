@@ -17,9 +17,9 @@ function App() {
       <div className='Main'>
         <Routes>
           <Route path="/" element={<Landing />} />
+          <Route path="/developer" element={<Developer />} />
           <Route path="/designer" element={<Designer />} />
           <Route path="/designer/:projectName" element={<DesignPage />} />
-          <Route path="/developer" element={<Developer />} />
           <Route path="/volunteer" element={<Volunteer />} />
           <Route path="/:unknown" element={<PageNotFound />} />
         </Routes>

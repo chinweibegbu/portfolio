@@ -16,10 +16,10 @@ function Landing() {
                     </div>
                     <div className="col-12 mt-1 d-flex">
                         <div className="portfolio-section">
-                            <p>Designer</p>
+                            <p>Developer</p>
                         </div>
                         <div className="portfolio-section">
-                            <p>Developer</p>
+                            <p>Designer</p>
                         </div>
                         <div className="portfolio-section">
                             <p>Volunteer</p>
