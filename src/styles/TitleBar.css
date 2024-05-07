@@ -7,7 +7,7 @@
     text-decoration: none;
 }
 
-.TitleBar a.active:not(:has(p.navbar-brand)) {
+.TitleBar a.active:not(:has(.navbar-brand)) {
     background-color: var(--cream);
     border-radius: 10px;
     
