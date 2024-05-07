@@ -6,8 +6,8 @@ function PageHeader({ title }) {
     const navigate = useNavigate();
 
     return ( 
-        <div className="PageHeader bordered d-flex flex-row">
-            <i onClick={() => { navigate(-1); }} className="bi-arrow-left align-content-center" />
+        <div className="PageHeader bordered d-flex flex-row mb-1">
+            <i onClick={() => { navigate(-1); }} className="fa-solid fa-arrow-left align-content-center" />
             <p className="title m-auto">{title} Projects</p>
         </div>
     );

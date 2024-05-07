@@ -1,50 +1,77 @@
-.Design > * {
-    width: 90%
+.DesignPreview {
+    width: 240px;
+    height: 250px;
 }
 
-.Design .img-preview {
-    height: 207px;
-    border: solid 1px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+.DesignPreview .img-preview, .DesignPreview .details {
+    width: 100%;
+    height: 50%;
 }
 
-.Design .img-preview:hover {
+.DesignPreview .img-preview {
+    border-bottom: solid 1px var(--black);
+}
+
+.DesignPreview .img-preview:hover {
     border-width: 2px;
     cursor: pointer;
 }
 
-.Design .img-preview img {
-    height: 100%;
-    max-width: 100%;
-    object-fit: fill;
-    border-radius: 10px;
+.DesignPreview .img-preview i {
+    font-size: 30px;
 }
 
-.Design .details * {
+.DesignPreview .img-preview img {
+    object-fit: cover;
+}
+
+.DesignPreview .details {
+    padding: 3px 5px;
+}
+
+.DesignPreview .details * {
     margin: 0;
 }
 
-.Design .details .details-text {
+.DesignPreview .details .details-text {
     display: block;
     width: 90%
 }
 
-.Design .details .details-name {
+.DesignPreview .details .details-name {
     font-size: 16px;
+    font-weight: bold;
 }
 
-.Design .details .details-name:hover {
+.DesignPreview .details .details-name:hover {
     cursor: pointer;
 }
 
-.Design .details .details-description {
-    font-size: 13px;
+.DesignPreview .details .details-summary {
+    font-size: 11px;
+    line-height: 130%;
 }
 
-.Design .details .details-interact-btn {
-    font-size: larger;
+.DesignPreview .details .details-tag {
+    width: fit-content;
+    padding: 1px 5px;
+    margin: 4px 0;
+    border: solid 1px var(--dark-green);
+    border-radius: 3px;
+
+    color: var(--dark-green);
+    font-size: 9px;
 }
 
-.Design .details .details-interact-btn:hover {
+.DesignPreview .details .details-interact-buttons {
+    padding: 1px 0;
+}
+
+.DesignPreview .details .details-interact-buttons * {
+    margin-right: 3px;
+}
+
+.DesignPreview .details .details-interact-buttons *:hover {
+    color: var(--dark-green);
     cursor: pointer;
 }

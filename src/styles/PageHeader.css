@@ -7,7 +7,6 @@
 .PageHeader i {
     margin-left: 5px;
     color: var(--dark-green);
-    -webkit-text-stroke: 1px;
 }
 
 .PageHeader i:hover {
@@ -17,4 +16,5 @@
 .PageHeader .title {
     text-transform: uppercase;
     font-weight: bold;
+    color: var(--dark-green);
 }

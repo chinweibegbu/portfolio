@@ -4,6 +4,8 @@ import '../../styles/DesignPreview.css';
 import './DesignPage.js';
 
 function DesignPreview({ projectName, projectData }) {
+    const state = 0;
+
     const navigate = useNavigate();
     const handleClick = () => {
         const newLocation = "/designer/" + projectName;
@@ -14,24 +16,36 @@ function DesignPreview({ projectName, projectData }) {
         });
     }
 
-    const handleLinkClick = () => {
-        navigator.clipboard.writeText(projectData.figmaLink)
+    const handleInteractButtonClick = (linkType) => {
+        // navigator.clipboard.writeText(projectData[linkType]);
+        window.open(projectData[linkType], "_blank");
     }
 
     return (
-        <div className="Design col-xl-3 col-lg-4 col-md-6 col-sm-12 my-3">
-            <div className="img-preview text-center" onClick={handleClick}>
-                <img src={"images/previews/"+projectName+".png"} alt={projectName+" - Preview"} />
+        <div className="DesignPreview col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3 bordered">
+            <div className="img-preview d-flex justify-content-center align-items-center" onClick={handleClick}>
+                {
+                    !state ?
+                        <i className="fa-solid fa-image" /> :
+                        <img src={"images/previews/" + projectName + ".png"} alt={projectName + " - Preview"} />
+                }
             </div>
-            <div className="details d-flex justify-content-between">
+            <div className="details">
                 <div className="details-text">
                     <p className="details-name" onClick={handleClick}>{projectName}</p>
+                    <p className="details-summary">{projectData.summary}</p>
                 </div>
-                <div className="details-interact-btn d-flex align-items-center">
-                    <i className="bi-link-45deg" onClick={handleLinkClick} />
+                <div className="details-tag">
+                    {projectData.tag}
+                </div>
+                <div className="details-interact-buttons">
+                    <i className="fa-brands fa-github" onClick={() => handleInteractButtonClick("githubLink")} />
+                    <i className="fa-brands fa-chrome" onClick={() => handleInteractButtonClick("websiteLink")} />
+                    <i className="fa-brands fa-figma" onClick={() => handleInteractButtonClick("figmaLink")} />
                 </div>
             </div>
         </div>
+
     );
 }
 
