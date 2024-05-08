@@ -13,8 +13,13 @@
     cursor: pointer;
 }
 
-.PageHeader .title {
+.PageHeader .title-page {
     text-transform: uppercase;
+    font-weight: bold;
+    color: var(--dark-green);
+}
+
+.PageHeader .title-project {
     font-weight: bold;
     color: var(--dark-green);
 }

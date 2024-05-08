@@ -30,7 +30,7 @@ function Designer() {
     return (
         <div className="Designer container Container">
             
-            <PageHeader title="Designer" />
+            <PageHeader title="Designer" type="page" />
 
             <div className="flex-row d-flex flex-wrap justify-content-between">
                 {

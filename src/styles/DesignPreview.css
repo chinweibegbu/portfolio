@@ -13,12 +13,11 @@
 }
 
 .DesignPreview .img-preview:hover {
-    border-width: 2px;
     cursor: pointer;
 }
 
 .DesignPreview .img-preview i {
-    font-size: 30px;
+    font-size: var(--placeholder-icon);
 }
 
 .DesignPreview .img-preview img {
@@ -29,7 +28,7 @@
     padding: 3px 5px;
 }
 
-.DesignPreview .details * {
+.DesignPreview .details *:not(.Tag) {
     margin: 0;
 }
 
@@ -39,7 +38,7 @@
 }
 
 .DesignPreview .details .details-name {
-    font-size: 16px;
+    font-size: var(--regular-title-text);
     font-weight: bold;
 }
 
@@ -48,7 +47,7 @@
 }
 
 .DesignPreview .details .details-summary {
-    font-size: 11px;
+    font-size: var(--small-text);
     line-height: 130%;
 }
 
@@ -60,7 +59,7 @@
     border-radius: 3px;
 
     color: var(--dark-green);
-    font-size: 9px;
+    font-size: var(--tiny-tag-text);
 }
 
 .DesignPreview .details .details-interact-buttons {

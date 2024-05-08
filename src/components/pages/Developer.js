@@ -4,7 +4,7 @@ import PageHeader from "../common/PageHeader.js";
 function Developer() {
     return (
         <div className="Developer container Container">
-            <PageHeader title="Developer" />
+            <PageHeader title="Developer" type="page" />
         </div>
     );
 }

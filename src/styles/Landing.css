@@ -1,17 +1,17 @@
 .Landing .biggest-text {
     font-family: Inter;
-    font-size: 100px;
+    font-size: var(--huge-text);
     font-weight: 900;
     line-height: 100%;
 }
 
 .Landing .big-text {
-    font-size: 42px;
+    font-size: var(--big-text);
     line-height: 100%;
 }
 
 .Landing .subtitle {
-    font-size: 14px;
+    font-size: var(--regular-text);
 }
 
 .Landing .headshot {
@@ -28,7 +28,7 @@
     height: 30px;
     padding: 5px 10px;
     margin-right: 10px;
-    font-size: 12px;
+    font-size: var(--small-tag-text);
 
     color: var(--white);
     text-align: center;

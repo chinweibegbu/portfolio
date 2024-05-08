@@ -4,6 +4,16 @@
   --dark-green: #214F0F;
   --black: #000000;
   --white: #FFFFFF;
+
+  --huge-text: 100px;
+  --big-text: 42px;
+  --regular-title-text: 16px;
+  --regular-text: 14px;
+  --small-tag-text: 12px;
+  --small-text: 11px;
+  --tiny-tag-text: 9px;
+
+  --placeholder-icon: 30px;
 }
 
 * {

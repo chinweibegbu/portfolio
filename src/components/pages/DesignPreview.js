@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import '../../styles/DesignPreview.css';
 import './DesignPage.js';
+import Tag from "../common/Tag.js";
 
 function DesignPreview({ projectName, projectData }) {
     const state = 0;
@@ -35,9 +36,7 @@ function DesignPreview({ projectName, projectData }) {
                     <p className="details-name" onClick={handleClick}>{projectName}</p>
                     <p className="details-summary">{projectData.summary}</p>
                 </div>
-                <div className="details-tag">
-                    {projectData.tag}
-                </div>
+                <Tag text={projectData.tag} size="tiny" colorScheme="outline" />
                 <div className="details-interact-buttons">
                     <i className="fa-brands fa-github" onClick={() => handleInteractButtonClick("githubLink")} />
                     <i className="fa-brands fa-chrome" onClick={() => handleInteractButtonClick("websiteLink")} />
