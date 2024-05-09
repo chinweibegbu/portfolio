@@ -1,6 +1,6 @@
 import React from "react";
-import Logo from "../common/Logo";
 import "../../styles/Landing.css";
+import { TypeAnimation } from 'react-type-animation';
 
 function Landing() {
     return (
@@ -9,7 +9,17 @@ function Landing() {
                 <div className="col-6 d-flex flex-column my-auto">
                     <div className="col-12">
                         <p className="big-text m-0">I am</p>
-                        <p className="biggest-text m-0">CHINWE IBEGBU</p>
+                        {/* <p className="biggest-text m-0">CHINWE IBEGBU</p> */}
+                        <TypeAnimation
+                            sequence={[
+                                "CHINWE IBEGBU",
+                                1000
+                            ]}
+                            wrapper="p"
+                            speed={50}
+                            className="biggest-text m-0"
+                            repeat={1}
+                        />
                     </div>
                     <div className="subtitle col-12 mt-2">
                         <p>A learner finding my path in technology and life at large with curiosity and flexibility</p>
