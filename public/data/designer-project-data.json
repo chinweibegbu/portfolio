@@ -1,0 +1,58 @@
+{
+    "Hospital Helper": {
+        "name": "Hospital Helper",
+        "embed": "<iframe width='100%'  width='500' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fj2cZ1TLyrVnOG2khtQp2AZ%2FStoryboard-Wireframe%3Ftype%3Ddesign%26node-id%3D111%253A2%26mode%3Ddesign%26t%3DpzEed1HEgvIT6F34-1' title='Hospital Helper' allowfullscreen></iframe>",
+        "summary": "An application to ease patient-pratictioner interactions for elderly Ghanaians",
+        "figmaLink": "https://www.figma.com/file/j2cZ1TLyrVnOG2khtQp2AZ/Storyboard-Wireframe?type=design&node-id=111%3A2&mode=design&t=4ldpTdsGlGgQBWmT-1",
+        "applicationLink": "https://www.google.com",
+        "applicationType": "Web application",
+        "problemStatement": "Francis, a married and retired 67-year-old Ghanaian man, needs to receive cordial and meaningful service when physically visiting the hospital to improve his patient-practitioner interactions as an aged person",
+        "date": "March 2023",
+        "tag": "Tablet application",
+        "context": "Academic project",
+        "team": "Team of 5",
+        "toolsUsed": ["Figma", "Coolors", "Canva"]
+    },
+    "Alarm Clock": {
+        "name": "Alarm Clock",
+        "embed": "<iframe width='100%'  width='500' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FHRPzIUunpusXqsFSLKWHPj%2FAlarm-Clock-(Ver.-2)%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dz2gvaStzK0m5IWcY-1' title='Alarm Clock Mobile App' allowfullscreen></iframe>",
+        "summary": "Alarm clock mobile application for Gen-Z anime fans",
+        "figmaLink": "https://www.figma.com/file/HRPzIUunpusXqsFSLKWHPj/Alarm-Clock-(Ver.-2)?type=design&node-id=0%3A1&mode=design&t=vml8HVyDwFPv8sVA-1",
+        "applicationLink": "https://www.google.com",
+        "applicationType": "Web application",
+        "problemStatement": "Generation Z university students need an alarm clock app which is more tuned to their specific needs and wants",
+        "date": "January 2023",
+        "tag": "Mobile application",
+        "context": "Academic project",
+        "team": "Solo",
+        "toolsUsed": ["Figma", "Coolors", "Canva"]
+    },
+    "ASH Group Manager": {
+        "name": "ASH Group Manager",
+        "embed": "<iframe width='100%'  width='500' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBeXSx1ZNqkDVMYtsxDFV6T%2FMid-Semester-Challenge---Chinwe-Ibegbu%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3Dkze2bL04zUC9Y6Vm-1' title='ASH Course Group Manager' allowfullscreen></iframe>",
+        "summary": "A web-based course group manager for Ashesi University faculty",
+        "figmaLink": "https://www.figma.com/file/BeXSx1ZNqkDVMYtsxDFV6T/Mid-Semester-Challenge---Chinwe-Ibegbu?type=design&node-id=0%3A1&mode=design&t=9SoVeIca5K1StF1F-1",
+        "applicationLink": "https://www.google.com",
+        "applicationType": "Web application",
+        "problemStatement": "Ashesi University faculty need an easy and streamlined way to consolidate with student groups created to facilitate course teachings",
+        "date": "March 2023",
+        "tag": "Web application",
+        "context": "Academic project",
+        "team": "Solo",
+        "toolsUsed": ["Figma", "Coolors", "Canva"]
+    },
+    "ASH WiFi Manager": {
+        "name": "ASH WiFi Manager",
+        "embed": "<iframe width='100%'  width='500' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FBeXSx1ZNqkDVMYtsxDFV6T%2FMid-Semester-Challenge---Chinwe-Ibegbu%3Ftype%3Ddesign%26node-id%3D2%253A3%26mode%3Ddesign%26t%3Dkze2bL04zUC9Y6Vm-1' title='ASH WiFi Manager' allowfullscreen></iframe>",
+        "summary": "A mobile app for Ashesi University WiFi management on-the-go",
+        "figmaLink": "https://www.figma.com/file/BeXSx1ZNqkDVMYtsxDFV6T/Mid-Semester-Challenge---Chinwe-Ibegbu?type=design&node-id=2%3A3&mode=design&t=hvQOWz3taAy0kSX2-1",
+        "applicationLink": "https://www.google.com",
+        "applicationType": "Web application",
+        "problemStatement": "The Ashesi University I.T. Department needs a mobile app to quickly access WiFi management details on-the-go to ease the troubleshooting and problem-solving process",
+        "date": "March 2023",
+        "tag": "Mobile application",
+        "context": "Academic project",
+        "team": "Solo",
+        "toolsUsed": ["Figma", "Coolors", "Canva"]
+    }
+}
