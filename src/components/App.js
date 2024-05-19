@@ -7,6 +7,7 @@ import Landing from './pages/Landing.js';
 import Designer from './pages/Designer.js';
 import DesignPage from './pages/DesignPage.js';
 import Developer from './pages/Developer.js';
+import DeveloperPage from './pages/DeveloperPage.js';
 import Volunteer from './pages/Volunteer.js';
 import PageNotFound from './common/PageNotFound.js';
 
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/developer" element={<Developer />} />
+          <Route path="/developer/:projectName" element={<DeveloperPage />} />
           <Route path="/designer" element={<Designer />} />
           <Route path="/designer/:projectName" element={<DesignPage />} />
           <Route path="/volunteer" element={<Volunteer />} />
