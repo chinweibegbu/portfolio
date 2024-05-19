@@ -1,8 +1,18 @@
 .UnderConstruction {
+    height: 85%;
     text-align: center;
 }
 
 .UnderConstruction img {
     width: 30%;
     min-width: 100px;
+}
+
+.UnderConstruction p {
+    margin: 0;
+}
+
+.UnderConstruction p.medium-text {
+    font-size: var(--medium-text);
+    font-weight: bold;
 }
