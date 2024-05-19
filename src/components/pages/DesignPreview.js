@@ -1,24 +1,27 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import '../../styles/DesignPreview.css';
+
 import './DesignPage.js';
 import Tag from "../common/Tag.js";
 
-function DesignPreview({ projectName, projectData }) {
+import useFetchProject from "../../hooks/useFetchProject.js";
+
+function DesignPreview({ projectName, allProjectData }) {
     const state = 0;
+    const [projectData] = useFetchProject(allProjectData, projectName);
 
     const navigate = useNavigate();
     const handleClick = () => {
         const newLocation = "/designer/" + projectName;
         navigate(newLocation, {
             state: {
-                projectName: projectName
+                projectData: projectData
             }
         });
     }
 
     const handleInteractButtonClick = (linkType) => {
-        // navigator.clipboard.writeText(projectData[linkType]);
         window.open(projectData[linkType], "_blank");
     }
 
@@ -38,9 +41,8 @@ function DesignPreview({ projectName, projectData }) {
                 </div>
                 <Tag text={projectData.tag} size="tiny" colorScheme="outline" />
                 <div className="details-interact-buttons">
-                    <i className="fa-brands fa-github" onClick={() => handleInteractButtonClick("githubLink")} />
-                    <i className="fa-brands fa-chrome" onClick={() => handleInteractButtonClick("websiteLink")} />
                     <i className="fa-brands fa-figma" onClick={() => handleInteractButtonClick("figmaLink")} />
+                    {/* <i className="fa-brands fa-chrome" onClick={() => handleInteractButtonClick("websiteLink")} /> */}
                 </div>
             </div>
         </div>

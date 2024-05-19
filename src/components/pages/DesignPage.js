@@ -1,6 +1,5 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { getProjectData } from "../../utils/get-project-data.js";
 import '../../styles/DesignPage.css';
 
 import PageHeader from "../common/PageHeader.js";
@@ -9,11 +8,7 @@ import Tag from "../common/Tag.js";
 function DesignPage() {
     // Get project details
     const { state } = useLocation();
-    const { projectName } = state;
-    const projectData = getProjectData(projectName);
-
-    const placeholderTechStack = ["JavaScript", "HTML", "CSS", "Node.js", "React.js", "SQL", "PostgreSQL"];
-    const placeholderTools = ["VS Code", "Figma", "Postman", "Git"];
+    const { projectData } = state;
 
     const handleLinkClick = (link) => {
         window.open(link, "_blank");
@@ -21,20 +16,20 @@ function DesignPage() {
 
     return (
         <div className="DesignPage container Container">
-            <PageHeader title={projectName} type="project" />
+            <PageHeader title={projectData.name} type="project" />
 
             <div className="flex-row project-overview my-3">
                 <div className="project-overview-category d-flex">
-                    <p> Area: </p>
-                    <p> Full-stack web development </p>
+                    <p> Type: </p>
+                    <p> {projectData.tag} </p>
                 </div>
                 <div className="project-overview-category d-flex">
                     <p> Context: </p>
-                    <p> Personal Project </p>
+                    <p> {projectData.context} </p>
                 </div>
                 <div className="project-overview-category d-flex">
                     <p> Team: </p>
-                    <p> Solo </p>
+                    <p> {projectData.team} </p>
                 </div>
             </div>
             <div className="flex-row project-description">
@@ -47,28 +42,14 @@ function DesignPage() {
                 </div>
                 <div className="offset-1 col-5 project-content-details flex-row">
                     <div>
-                        <p>Tech stack:</p>
-                        <div className="d-flex flex-wrap">
-                            {
-                                placeholderTechStack.map((name, key) => {
-                                    return <Tag key={key} text={name} size="small" colorScheme="solid" />
-                                })
-                            }
-                        </div>
-                    </div>
-                    <div>
                         <p>Tools used:</p>
                         <div className="d-flex flex-wrap">
                             {
-                                placeholderTools.map((name, key) => {
+                                projectData.toolsUsed.map((name, key) => {
                                     return <Tag key={key} text={name} size="small" colorScheme="outline" />
                                 })
                             }
                         </div>
-                    </div>
-                    <div className="link-section" onClick={() => handleLinkClick(projectData.githubLink)}>
-                        <p>GitHub link:</p>
-                        <p>{projectData.githubLink}</p>
                     </div>
 
                     <div className="link-section" onClick={() => handleLinkClick(projectData.figmaLink)}>
@@ -76,9 +57,9 @@ function DesignPage() {
                         <p>{projectData.figmaLink}</p>
                     </div>
 
-                    <div className="link-section" onClick={() => handleLinkClick(projectData.websiteLink)}>
-                        <p>Deployed application link:</p>
-                        <p>{projectData.websiteLink}</p>
+                    <div className="link-section" onClick={() => handleLinkClick(projectData.applicationLink)}>
+                        <p>Application link ({projectData.applicationType}):</p>
+                        <p>{projectData.applicationLink}</p>
                     </div>
                 </div>
             </div>

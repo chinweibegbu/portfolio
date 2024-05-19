@@ -1,21 +1,16 @@
 import React, { useState, useEffect } from "react";
 import '../../styles/Designer.css';
-import { projectData } from "../../utils/project-data.js";
 
 import DesignPreview from "./DesignPreview.js";
 import PreviewPadding from "../common/PreviewPadding.js";
 import PageHeader from "../common/PageHeader.js";
-import PaginatedItems from "../common/PaginatedItems.js";
+
+import useFetch from "../../hooks/useFetch.js";
 
 function Designer() {
-    const [allProjectData, setAllProjectData] = useState(null);
+    const [allProjectData] = useFetch("designer-project-data.json");
     const [isLoading, setIsLoading] = useState(true);
     const [previewPadding, setPreviewPadding] = useState([]);
-
-    // Load project data once page is loaded
-    useEffect(() => {
-        setAllProjectData(projectData);
-    }, []);
 
     // Calculate padding once allProjectData is loaded
     useEffect(() => {
@@ -36,10 +31,9 @@ function Designer() {
                 {
                     isLoading ?
                         "Loading..." :
-                        // allProjectData.map((projectName, key) => {
-                        //     return <DesignPreview key={key} projectName={projectName} projectData={getProjectData(projectName)} />
-                        // })
-                        <PaginatedItems Component={DesignPreview} items={allProjectData} itemsPerPage={4} />
+                        Object.keys(allProjectData).map((projectName, key) => {
+                            return <DesignPreview key={key} projectName={projectName} allProjectData={allProjectData} />
+                        })
                 }
                 
                 {
