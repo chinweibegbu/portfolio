@@ -1,0 +1,50 @@
+.DeveloperPage {
+
+    .project-overview,
+    .project-description {
+        p {
+            margin: 0;
+            font-size: var(--regular-text);
+        }
+    }
+
+    .project-overview-category p:first-child {
+        min-width: 100px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .project-content-visual {
+        height: 50vh;
+
+        i {
+            font-size: var(--placeholder-icon);
+        }
+    }
+
+    .project-content {
+
+        p {
+            margin: 0;
+            font-size: var(--small-text);
+        }
+
+        .Tag {
+            margin-right: 5px;
+        }
+
+
+        .project-content-details > * {
+            margin-bottom: 15px;
+        }
+
+        .project-content-details .link-section p:nth-child(2) {
+            text-decoration: underline;
+        }
+
+        .project-content-details .link-section p:nth-child(2):hover {
+            cursor: pointer;
+            color: var(--dark-green);
+        }
+    }
+}
