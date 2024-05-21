@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import '../../styles/Designer.css';
 
 import DesignPreview from "./DesignPreview.js";
 import PreviewPadding from "../common/PreviewPadding.js";
@@ -15,7 +14,8 @@ function Designer() {
     // Calculate padding once allProjectData is loaded
     useEffect(() => {
         if (allProjectData) {
-            let numPreviewPadding = 4 - (Object.keys(allProjectData).length % 4);
+            let numProjects = Object.keys(allProjectData).length;
+            let numPreviewPadding = (numProjects % 4 === 0) ? 0 : 4 - (numProjects % 4);
             let paddings = new Array(numPreviewPadding).fill(0);
             setPreviewPadding(paddings);
             setIsLoading(false);
