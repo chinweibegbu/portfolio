@@ -8,7 +8,7 @@ import Tag from "../common/Tag.js";
 function DeveloperPage() {
     // Get project details
     const { state } = useLocation();
-    const { projectData } = state;
+    const { projectData, showFigmaEmbed } = state;
 
     const handleLinkClick = (link) => {
         window.open(link, "_blank");
@@ -37,8 +37,11 @@ function DeveloperPage() {
             </div>
             <div className="flex-row d-flex project-content mt-3">
                 <div className="col-6 project-content-visual d-flex justify-content-center align-items-center bordered">
-                    {/* {projectData.embed} */}
-                    <i className="fa-solid fa-image" />
+                    {
+                        !showFigmaEmbed ?
+                            <i className="fa-solid fa-image" /> :
+                            document.getElementByClass("project-content-visual").innerHTML = JSON.parse(JSON.stringify(projectData.embed))
+                    }
                 </div>
                 <div className="offset-1 col-5 project-content-details flex-row">
                     <div>

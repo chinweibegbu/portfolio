@@ -15,7 +15,8 @@ function DeveloperPreview({ projectName, allProjectData, showPreviewImage }) {
         const newLocation = "/developer/" + projectName;
         navigate(newLocation, {
             state: {
-                projectData: projectData
+                projectData: projectData,
+                showFigmaEmbed: false
             }
         });
     }

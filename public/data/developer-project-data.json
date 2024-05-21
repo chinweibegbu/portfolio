@@ -1,7 +1,7 @@
 {
     "Ashesi CV Builder": {
         "name": "Ashesi CV Builder",
-        "embed": "<iframe width='100' height='500' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fpk2nLD0cpkspC1QRtvEoIO%2FCV-Builder%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DOEl0u55X3tpmzCKQ-1' title='Ashesi CV Builder' allowfullscreen></iframe>",
+        "embedLink": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fpk2nLD0cpkspC1QRtvEoIO%2FCV-Builder%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DOEl0u55X3tpmzCKQ-1",
         "summary": "An intuitive CV building web application for Ashesi University students",
         "githubLink": "https://www.github.com/chinweibegbu/ashesi-cv-builder",
         "websiteLink": "https://www.google.com",
@@ -18,7 +18,7 @@
     },
     "Jammming": {
         "name": "Jammming",
-        "embed": "<iframe width='100' height='500' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvvQa255NR6jpbPrIk9jOWc%2FJammming%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3D0IL4s3ofy2GnBoQn-1' title='Jammming' allowfullscreen></iframe>",
+        "embedLink": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvvQa255NR6jpbPrIk9jOWc%2FJammming%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3D0IL4s3ofy2GnBoQn-1",
         "summary": "A Spotify playlist creation web app",
         "githubLink": "https://www.github.com/chinweibegbu/jammming-v2",
         "websiteLink": "https://www.google.com",
@@ -35,7 +35,7 @@
     },
     "SA Reporting Center": {
         "name": "SA Reporting Center",
-        "embed": "<iframe width='100' height='500' src='https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMLcGTmyMl5XcJCZd3SGpdL%2Fash_rc%3Ftype%3Ddesign%26node-id%3D222%253A1057%26mode%3Ddesign%26t%3D0IL4s3ofy2GnBoQn-1' title='SA Reporting Center' allowfullscreen></iframe>",
+        "embedLink": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMLcGTmyMl5XcJCZd3SGpdL%2Fash_rc%3Ftype%3Ddesign%26node-id%3D222%253A1057%26mode%3Ddesign%26t%3D0IL4s3ofy2GnBoQn-1",
         "summary": "Ashesi University Sexual Harrassment Reporting and Counselling mobile app",
         "githubLink": "https://www.github.com/chinweibegbu/ash-rc",
         "websiteLink": "https://www.google.com",

@@ -15,7 +15,8 @@ function DesignPreview({ projectName, allProjectData, showPreviewImage }) {
         const newLocation = "/designer/" + projectName;
         navigate(newLocation, {
             state: {
-                projectData: projectData
+                projectData: projectData,
+                showFigmaEmbed: true
             }
         });
     }
