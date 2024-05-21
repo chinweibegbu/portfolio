@@ -1,9 +1,13 @@
 :root {
-  --cream: #F0E9DB;
-  --dark-cream: #E0D7C6;
-  --dark-green: #214F0F;
-  --black: #000000;
-  --white: #FFFFFF;
+  --cream: rgb(240, 233, 219);
+  --dark-cream: rgb(224, 215, 198);
+  --darkest-cream: rgb(206, 197, 180);
+  --dark-green: rgb(33, 79, 15);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+
+  --green-background: rgba(33, 79, 15, 0.307);
+  --grey-shadow: rgba(0, 0, 0, 0.1);
 
   --huge-text: 100px;
   --big-text: 42px;

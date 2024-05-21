@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import '../../styles/DeveloperPreview.css';
+import '../../styles/SectionPreview.css';
 
 import './DeveloperPage.js';
 import Tag from "../common/Tag.js";
@@ -8,7 +8,7 @@ import Tag from "../common/Tag.js";
 import useFetchProject from "../../hooks/useFetchProject.js";
 
 function DeveloperPreview({ projectName, allProjectData }) {
-    const state = 0;
+    const state = 1;
     const [projectData] = useFetchProject(allProjectData, projectName);
 
     const navigate = useNavigate();
@@ -27,7 +27,7 @@ function DeveloperPreview({ projectName, allProjectData }) {
     }
 
     return (
-        <div className="DeveloperPreview col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3 bordered">
+        <div className="SectionPreview col-xl-3 col-lg-4 col-md-6 col-sm-12 mt-3 bordered">
             <div className="img-preview d-flex justify-content-center align-items-center" onClick={handleClick}>
                 {
                     !state ?
