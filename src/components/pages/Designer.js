@@ -32,7 +32,7 @@ function Designer() {
                     isLoading ?
                         "Loading..." :
                         Object.keys(allProjectData).map((projectName, key) => {
-                            return <DesignPreview key={key} projectName={projectName} allProjectData={allProjectData} />
+                            return <DesignPreview key={key} projectName={projectName} allProjectData={allProjectData} showPreviewImage={true} />
                         })
                 }
                 

@@ -32,7 +32,7 @@ function Developer() {
                     isLoading ?
                         "Loading..." :
                         Object.keys(allProjectData).map((projectName, key) => {
-                            return <DeveloperPreview key={key} projectName={projectName} allProjectData={allProjectData} />
+                            return <DeveloperPreview key={key} projectName={projectName} allProjectData={allProjectData} showPreviewImage={true} />
                         })
                 }
                 
