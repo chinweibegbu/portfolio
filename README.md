@@ -58,7 +58,7 @@
 
 ### Overview
 
-[![Product Name Screen Shot][product-screenshot]](https://chinwe-ibegbu-portfolio.onrender.com/)
+[![Portfolio Screenshot][product-screenshot]](https://chinwe-ibegbu-portfolio.onrender.com/)
 
 This project is a portfolio of all of Chinwe Ibegbu's technical and non-technical experience. This experience covers full-stack web development projects, AI/ML pojects, UI/UX projects, volunteering projects and more to come.
 
@@ -175,7 +175,7 @@ Project Link: [https://github.com/chinweibegbu/portfolio/](https://github.com/ch
 [issues-url]: https://github.com/chinweibegbu/portfolio/issues
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/chinwe-ibegbu
-[product-screenshot]: images/v0.9.0-screenshot.png
+[product-screenshot]: public/images/v0.9.0-screenshot.png
 
 [HTML]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
 [HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
