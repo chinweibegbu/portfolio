@@ -24,7 +24,7 @@ function Landing() {
                     <div className="subtitle col-12 mt-2">
                         <p>A learner finding my path in technology and life at large with curiosity and flexibility</p>
                     </div>
-                    <div className="col-12 mt-1 d-flex">
+                    {/* <div className="col-12 mt-1 d-flex">
                         <div className="portfolio-section">
                             <p>Developer</p>
                         </div>
@@ -34,6 +34,14 @@ function Landing() {
                         <div className="portfolio-section">
                             <p>Volunteer</p>
                         </div>
+                    </div> */}
+                    <div className="download-button col-12 mt-2 d-flex bordered justify-content-center py-2 px-3">
+                        <a href="../../../data/software-engineer-cv-31052024.pdf" download="Chinwe Ibegbu - Software Engineer CV.pdf">
+                            <div className="d-flex align-items-center">
+                                <i className="fa-solid fa-download me-2" />
+                                <p className="m-0">Download CV</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div className="col-6 d-flex flex-column my-auto">

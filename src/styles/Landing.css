@@ -33,3 +33,22 @@
     color: var(--white);
     text-align: center;
 }
+
+
+.Landing .download-button {
+    width: fit-content;
+    border-radius: 10px;
+}
+
+.Landing .download-button:hover {
+    background-color: var(--dark-green);
+    
+    * {
+        color: var(--cream);
+    }
+}
+
+.Landing .download-button * {
+    color: var(--black);
+    text-decoration: none;
+}
