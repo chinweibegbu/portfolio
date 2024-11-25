@@ -1,9 +1,62 @@
+:root {
+  --cream: rgb(240, 233, 219);
+  --dark-cream: rgb(224, 215, 198);
+  --darkest-cream: rgb(206, 197, 180);
+  --dark-green: rgb(33, 79, 15);
+  --black: rgb(0, 0, 0);
+  --white: rgb(255, 255, 255);
+
+  --green-background: rgba(33, 79, 15, 0.307);
+  --grey-shadow: rgba(0, 0, 0, 0.1);
+
+  --huge-text: 100px;
+  --big-text: 42px;
+  --medium-text: 32px;
+  --regular-title-text: 16px;
+  --regular-text: 14px;
+  --small-tag-text: 12px;
+  --small-text: 11px;
+  --tiny-tag-text: 9px;
+
+  --placeholder-icon: 30px;
+}
+
+* {
+  font-family: 'Roboto Mono';
+}
+
+.App .Main {
+  height: 85vh;
+  background-color: var(--cream);
+  overflow-y: scroll;
+}
+
+.App .Main::-webkit-scrollbar {
+  width: 10px;
+}
+
+.App .Main::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background-color: var(--dark-cream);
+}
+
+.App .Main::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background-color: var(--dark-green);
+}
+
+.Container {
+  height: 100%;
+  width: 100%;
+  padding: 2rem 4rem; 
+}
+
 .heading {
   font-size: xx-large;
   font-weight: 700;
 }
 
 .bordered {
-  border: solid 1px black;
+  border: solid 1px var(--black);
   min-height: 20px;
 }

@@ -1,34 +1,48 @@
 import React, { useState, useEffect } from "react";
-import '../../styles/Designer.css';
-import { projectData } from "../../utils/project-data.js";
-import { getProjectData } from "../../utils/get-project-data.js";
 
 import DesignPreview from "./DesignPreview.js";
+import PreviewPadding from "../common/PreviewPadding.js";
+import PageHeader from "../common/PageHeader.js";
+
+import useFetch from "../../hooks/useFetch.js";
 
 function Designer() {
-    const [allProjectData, setAllProjectData] = useState(null);
+    const [allProjectData] = useFetch("designer-project-data.json");
     const [isLoading, setIsLoading] = useState(true);
+    const [previewPadding, setPreviewPadding] = useState([]);
 
-    // Load project data once page is loaded
+    // Calculate padding once allProjectData is loaded
     useEffect(() => {
-        setAllProjectData(projectData);
-        setIsLoading(false);
-    });
+        if (allProjectData) {
+            let numProjects = Object.keys(allProjectData).length;
+            let numPreviewPadding = (numProjects % 4 === 0) ? 0 : 4 - (numProjects % 4);
+            let paddings = new Array(numPreviewPadding).fill(0);
+            setPreviewPadding(paddings);
+            setIsLoading(false);
+        }
+    }, [allProjectData]);
 
     return (
-        <div className="Designer container py-3">
-            <div className="row">
-                <h2 className="my-2">Design Projects</h2>
-            </div>
-            <div className="row d-flex flex-wrap">
+        <div className="Designer container Container">
+
+            <PageHeader title="Designer" type="page" />
+
+            <div className="flex-row d-flex flex-wrap justify-content-between">
                 {
                     isLoading ?
                         "Loading..." :
                         Object.keys(allProjectData).map((projectName, key) => {
-                            return <DesignPreview key={key} projectName={projectName} projectData={getProjectData(projectName)} />
+                            return <DesignPreview key={key} projectName={projectName} allProjectData={allProjectData} showPreviewImage={true} />
                         })
                 }
+                
+                {
+                    previewPadding.map((key) => {
+                        return <PreviewPadding key={key} />
+                    })
+                }
             </div>
+
         </div>
     );
 }

@@ -1,11 +1,11 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import '../../styles/DesignPage.css';
+import '../../styles/DeveloperPage.css';
 
 import PageHeader from "../common/PageHeader.js";
 import Tag from "../common/Tag.js";
 
-function DesignPage() {
+function DeveloperPage() {
     // Get project details
     const { state } = useLocation();
     const { projectData, showFigmaEmbed } = state;
@@ -15,13 +15,13 @@ function DesignPage() {
     }
 
     return (
-        <div className="DesignPage container Container">
+        <div className="DeveloperPage container Container">
             <PageHeader title={projectData.name} type="project" />
 
             <div className="flex-row project-overview my-3">
                 <div className="project-overview-category d-flex">
-                    <p> Type: </p>
-                    <p> {projectData.tag} </p>
+                    <p> Area: </p>
+                    <p> {projectData.area} </p>
                 </div>
                 <div className="project-overview-category d-flex">
                     <p> Context: </p>
@@ -40,19 +40,33 @@ function DesignPage() {
                     {
                         !showFigmaEmbed ?
                             <i className="fa-solid fa-image" /> :
-                            <iframe width="100%" height="100%" src={projectData.embedLink} title={projectData.name} allowFullScreen></iframe>
+                            document.getElementByClass("project-content-visual").innerHTML = JSON.parse(JSON.stringify(projectData.embed))
                     }
                 </div>
                 <div className="offset-1 col-5 project-content-details flex-row">
                     <div>
+                        <p>Tech stack:</p>
+                        <div className="d-flex flex-wrap">
+                            {
+                                projectData.techStack.map((name, key) => {
+                                    return <Tag key={key} text={name} size="small" colorScheme="solid" />
+                                })
+                            }
+                        </div>
+                    </div>
+                    <div>
                         <p>Tools used:</p>
                         <div className="d-flex flex-wrap">
                             {
-                                projectData.toolsUsed.map((name, key) => {
+                                projectData.tools.map((name, key) => {
                                     return <Tag key={key} text={name} size="small" colorScheme="outline" />
                                 })
                             }
                         </div>
+                    </div>
+                    <div className="link-section" onClick={() => handleLinkClick(projectData.githubLink)}>
+                        <p>GitHub link:</p>
+                        <p>{projectData.githubLink}</p>
                     </div>
 
                     <div className="link-section" onClick={() => handleLinkClick(projectData.figmaLink)}>
@@ -60,9 +74,9 @@ function DesignPage() {
                         <p>{projectData.figmaLink}</p>
                     </div>
 
-                    <div className="link-section" onClick={() => handleLinkClick(projectData.applicationLink)}>
-                        <p>Application link ({projectData.applicationType}):</p>
-                        <p>{projectData.applicationLink}</p>
+                    <div className="link-section" onClick={() => handleLinkClick(projectData.websiteLink)}>
+                        <p>Deployed application link:</p>
+                        <p>{projectData.websiteLink}</p>
                     </div>
                 </div>
             </div>
@@ -71,4 +85,4 @@ function DesignPage() {
     );
 }
 
-export default DesignPage;
+export default DeveloperPage;

@@ -1,0 +1,5 @@
+.Footer {
+    border-top: solid 1px var(--black);
+    height: 5vh;
+    background-color: var(--cream);
+}

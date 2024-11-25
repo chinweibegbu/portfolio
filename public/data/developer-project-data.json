@@ -1,0 +1,53 @@
+{
+    "Ashesi CV Builder": {
+        "name": "Ashesi CV Builder",
+        "embedLink": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fpk2nLD0cpkspC1QRtvEoIO%2FCV-Builder%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DOEl0u55X3tpmzCKQ-1",
+        "summary": "An intuitive CV building web application for Ashesi University students",
+        "githubLink": "https://www.github.com/chinweibegbu/ashesi-cv-builder",
+        "websiteLink": "https://www.google.com",
+        "figmaLink": "https://www.figma.com/file/pk2nLD0cpkspC1QRtvEoIO/CV-Builder?type=design&node-id=0%3A1&mode=design&t=8cLMSAcSvMk7jtR7-1",
+        "lowerFidelity": null,
+        "problemStatement": "Ashesi University students need an easy CV builder for a variety of applications as an alternative to the tedious Microsoft Word template that is currently available",
+        "date": "August 2023",
+        "tag": "Web application",
+        "area": "Full-stack development",
+        "context": "Personal project",
+        "team": "Solo",
+        "techStack": ["JavaScript", "HTML", "CSS", "Node.js", "React.js", "Express.js", "SQL", "PostgreSQL"],
+        "tools": ["VS Code", "Postman", "Git", "GitHub"]
+    },
+    "Jammming": {
+        "name": "Jammming",
+        "embedLink": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FvvQa255NR6jpbPrIk9jOWc%2FJammming%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3D0IL4s3ofy2GnBoQn-1",
+        "summary": "A Spotify playlist creation web app",
+        "githubLink": "https://www.github.com/chinweibegbu/jammming-v2",
+        "websiteLink": "https://www.google.com",
+        "figmaLink": "https://www.figma.com/file/vvQa255NR6jpbPrIk9jOWc/Jammming?type=design&node-id=0%3A1&mode=design&t=dn8b2k4WFtFcqZLv-1",
+        "lowerFidelity": null,
+        "problemStatement": "18-24 year-olds need an easy way to add multiple songs to a new Spotify playlist at the same time as an alternative to the one-by-one approach currently offered by Spotify",
+        "date": "October 2023",
+        "tag": "Web application",
+        "area": "Front-end development",
+        "context": "Online course project",
+        "team": "Solo",
+        "techStack": ["JavaScript", "HTML", "CSS", "Node.js", "React.js"],
+        "tools": ["VS Code", "Postman", "Git", "GitHub"]
+    },
+    "SA Reporting Center": {
+        "name": "SA Reporting Center",
+        "embedLink": "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FMLcGTmyMl5XcJCZd3SGpdL%2Fash_rc%3Ftype%3Ddesign%26node-id%3D222%253A1057%26mode%3Ddesign%26t%3D0IL4s3ofy2GnBoQn-1",
+        "summary": "Ashesi University Sexual Harrassment Reporting and Counselling mobile app",
+        "githubLink": "https://www.github.com/chinweibegbu/ash-rc",
+        "websiteLink": "https://www.google.com",
+        "figmaLink": "https://www.figma.com/file/MLcGTmyMl5XcJCZd3SGpdL/ash_rc?type=design&node-id=222%3A1057&mode=design&t=JMM8BkwjMxllkJ2h-1",
+        "lowerFidelity": null,
+        "problemStatement": "Ashesi University students need a private and encouraging platform to come forward about sexual harrasment and assault incidents which occur against them or are witnessed by them",
+        "date": "March 2022",
+        "tag": "Mobile application",
+        "area": "Full-stack development",
+        "context": "Academic project",
+        "team": "Team of 5",
+        "techStack": ["Flutter", "HTML", "CSS", "Node.js", "SQL", "PostgreSQL"],
+        "tools": ["VS Code", "Git", "GitHub"]
+    }
+}

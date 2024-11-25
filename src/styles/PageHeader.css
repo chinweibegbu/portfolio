@@ -1,0 +1,25 @@
+.PageHeader {
+    height: 30px;
+    width: 100%;
+    border-color: var(--dark-green);
+}
+
+.PageHeader i {
+    margin-left: 5px;
+    color: var(--dark-green);
+}
+
+.PageHeader i:hover {
+    cursor: pointer;
+}
+
+.PageHeader .title-page {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--dark-green);
+}
+
+.PageHeader .title-project {
+    font-weight: bold;
+    color: var(--dark-green);
+}

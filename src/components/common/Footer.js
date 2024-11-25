@@ -1,11 +1,14 @@
 import React from "react";
+import "../../styles/Footer.css";
 
 function Footer() {
     return (
-        <footer className="bg-white py-4 mt-auto">
-            <div className="container">
-                <div className="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div className="col-auto"><div className="small m-0">Copyright &copy; Chinwe Ibegbu - Portfolio 2023</div></div>
+        <footer className="Footer">
+            <div className="container h-100">
+                <div className="row h-100 flex-column flex-sm-row align-content-center">
+                    <div className="col-auto">
+                        <div className="small m-0">&copy; Chinwe Ibegbu - Portfolio 2024</div>
+                    </div>
                 </div>
             </div>
         </footer>
